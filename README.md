@@ -19,7 +19,8 @@ Contact · Privacy Policy (POPIA) · 404
 
 ## Content sources
 - All company text is from the client's Company Profile (2024), lightly edited and typo-corrected.
-- All 34 project photos are the client's own, extracted from the Company Profile.
+- 34 project photos are the client's own, extracted from the Company Profile.
+- 4 more real jobs supplied by Dion on 11 Nov 2026: Bio Tech Fuel & Gas (pylon), Phoenix Tyres, Atlas Battery, Seaview Liquors.
 - Contact details confirmed by Dion (11 Nov 2026): 25 Sedgemoor Pl, Woodlands, Durban, 4004 · +27 81 400 2417 · info@worldbrandsigns.co.za
 
 ## ⚠️ Demo content to replace before going live

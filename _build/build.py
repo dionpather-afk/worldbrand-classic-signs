@@ -54,17 +54,17 @@ SERVICES = [
   'short':'Raised, built-up letters and logos that jump off the wall — lit or unlit.',
   'intro':'Nothing says “we mean business” like letters you can reach out and touch. We design and fabricate built-up 3D lettering and logos in our workshop, then install them on your shopfront, reception wall or building face. Add face-lit, back-lit or edge-lit LEDs and your brand keeps working after dark.',
   'list':['Built-up channel letters and logos','Face-lit, back-lit (halo) and edge-lit LED options','Acrylic, ACM and painted finishes matched to your brand colours','Shopfront fascias, reception walls and building signage','Full design, fabrication and installation by our own team'],
-  'gallery':['saranos-3d-letters','chicken-tikka-3d-letters','fight-club-umhlanga','eikay-entertainment']},
- {'slug':'billboards','name':'Billboards','img':'durban-bumper-clinic',
+  'gallery':['phoenix-tyres-install','seaview-liquors-shopfront','saranos-3d-letters','chicken-tikka-3d-letters','fight-club-umhlanga','eikay-entertainment']},
+ {'slug':'billboards','name':'Billboards','img':'atlas-battery-shopfront',
   'short':'Big, bold boards that get your message seen from the road.',
   'intro':'When you need to be seen from across the street or down the highway, size matters. We print and install large-format boards and fascia billboards that carry your brand, your offer and your contact details clearly — built to handle Durban sun, wind and rain.',
   'list':['Large-format printed billboard skins','Fascia and roadside boards','Weather-resistant materials and inks','Frame supply, flighting changes and replacements','Design help so your message reads at a glance'],
-  'gallery':['durban-bumper-clinic','eikay-entertainment','unicopy-shopfront']},
- {'slug':'pylon-signs','name':'Pylon Signs','img':'ba-ga-mothibi-pylon',
+  'gallery':['atlas-battery-shopfront','durban-bumper-clinic','eikay-entertainment','unicopy-shopfront']},
+ {'slug':'pylon-signs','name':'Pylon Signs','img':'bio-tech-pylon',
   'short':'Free-standing pylons, illuminated or non-illuminated, plus flags and wayfinding.',
   'intro':'A pylon is your landmark — the sign people look for from the road or the parking lot. We build illuminated and non-illuminated pylons, directory boards and wayfinding signs, plus telescopic flags for campaigns and forecourts.',
   'list':['Illuminated and non-illuminated pylons','Directory and multi-tenant boards','Wayfinding and information signage','Telescopic and feather flags','Foundations and installation handled for you'],
-  'gallery':['ba-ga-mothibi-pylon','frangeros-flags','ba-ga-mothibi-entrance','frangeros-flag-closeup']},
+  'gallery':['bio-tech-pylon-front','ba-ga-mothibi-pylon','frangeros-flags','ba-ga-mothibi-entrance']},
  {'slug':'perspex-signs','name':'Perspex Signs','img':'perception-perspex',
   'short':'Clean, glossy acrylic signs for salons, offices, clinics and stores.',
   'intro':'Perspex (acrylic) gives you that clean, premium finish — glossy colour, crisp edges and plenty of options. From cut-out logos on a feature wall to layered panels and stand-off plaques, perspex is a favourite for salons, offices and retail.',
@@ -74,7 +74,7 @@ SERVICES = [
   'short':'Glowing boxes and shapes that light up your brand day and night.',
   'intro':'A lightbox turns your logo into a beacon. We build single- and double-sided lightboxes, custom-shaped light signs and projecting signs with energy-efficient LEDs — so your brand glows long after the shop lights go down.',
   'list':['Single- and double-sided lightboxes','Custom-shaped and cut-out light signs','Projecting (blade) signs','Energy-efficient LED illumination','Fabricated and tested in our workshop'],
-  'gallery':['cold-meat-deli-lightbox','bull-skull-lightbox','lightbox-fabrication','prince-wholesalers-night']},
+  'gallery':['cold-meat-deli-lightbox','atlas-battery-shopfront','bull-skull-lightbox','lightbox-fabrication','prince-wholesalers-night']},
  {'slug':'digital-printing','name':'Digital Printing','img':'gatti-window-branding',
   'short':'Window graphics, banners, flags, posters and printed branding.',
   'intro':'Sharp colour, big or small. We digitally print window graphics, vinyl decals, banners, flags, posters and promotional branding — and we install it too, so it goes up straight and stays up.',
@@ -94,6 +94,10 @@ SERVICES = [
 
 # ------------------------------------------------------------------ projects (all real, from the company profile)
 PROJECTS = [
+ ('bio-tech-pylon','Bio Tech Fuel & Gas','Forecourt pylon sign','pylon illuminated'),
+ ('phoenix-tyres-install','Phoenix Tyres','Illuminated 3D letters — installation','3d illuminated'),
+ ('atlas-battery-shopfront','Atlas Battery','Fascias, lightboxes & roadside board','shopfront illuminated'),
+ ('seaview-liquors-shopfront','Seaview Liquors','3D letters & shaped bottle sign','3d shopfront'),
  ('pizza-hut-malvern','Pizza Hut','KwaZulu-Natal','3d illuminated shopfront'),
  ('saranos-3d-letters','Saranos','3D fabricated letters','3d'),
  ('prince-wholesalers-night','Prince Wholesalers','Illuminated signage','3d illuminated'),
@@ -132,8 +136,9 @@ CLIENTS = [
  ('Saranos','Pizza · Pasta · Chicken'),('Frangeros','Flags & branding'),('UniCopy','Shopfront'),
  ('Lotus','Fresh Produce · Prayer Goods'),("Sultan's",'Pizza · Pasta · Grills'),("The Original Govender's",'Curry Kitchen'),
  ('Durban Schwarma','Signage'),('Hydraulics (Jacobs) cc','Vehicle branding'),
+ ('Bio Tech Fuel & Gas','Forecourt pylon'),('Phoenix Tyres','Illuminated 3D letters'),('Atlas Battery','Fascias & roadside board'),('Seaview Liquors','3D shopfront sign'),
 ]
-BRANDS_MARQUEE = ['Pizza Hut','Prince Wholesalers','Saranos','Frangeros','UniCopy','Lotus',"Sultan's","Govender's",'Durban Schwarma','Fight Club','The Image Salon','Gatti Ice Cream','Eikay Entertainment','Market Fresh','Gillitts Pharmacy','Durban Bumper Clinic','iPhone Drip','Perception','Revival Ministries','Hydraulics (Jacobs) cc']
+BRANDS_MARQUEE = ['Pizza Hut','Bio Tech Fuel & Gas','Phoenix Tyres','Atlas Battery','Seaview Liquors','Prince Wholesalers','Saranos','Frangeros','UniCopy','Lotus',"Sultan's","Govender's",'Durban Schwarma','Fight Club','The Image Salon','Gatti Ice Cream','Eikay Entertainment','Market Fresh','Gillitts Pharmacy','Durban Bumper Clinic','iPhone Drip','Perception','Revival Ministries','Hydraulics (Jacobs) cc']
 
 # DEMO testimonials — placeholders until the client supplies real reviews (see README).
 TESTIMONIALS = [
@@ -297,7 +302,7 @@ def jsonld():
 # ------------------------------------------------------------------ pages
 def page_home():
     marquee = ''.join(f'<span>{e(b)}</span>' for b in BRANDS_MARQUEE) * 2
-    featured = [p for p in PROJECTS if p[0] in ('pizza-hut-malvern','prince-wholesalers-night','iphone-drip-illuminated','ba-ga-mothibi-pylon','cold-meat-deli-lightbox','fight-club-umhlanga')]
+    featured = [p for p in PROJECTS if p[0] in ('bio-tech-pylon','phoenix-tyres-install','pizza-hut-malvern','atlas-battery-shopfront','seaview-liquors-shopfront','prince-wholesalers-night','iphone-drip-illuminated','ba-ga-mothibi-pylon','cold-meat-deli-lightbox')]
     tests = ''.join(f'''<div class="card quote-card reveal"><div class="stars">★★★★★</div><blockquote>“{e(q)}”</blockquote><p class="who">{e(w)}<small>{e(l)}</small></p></div>''' for q, w, l in TESTIMONIALS)
     body = f'''
 <section class="hero">

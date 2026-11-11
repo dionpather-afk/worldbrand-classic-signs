@@ -26,8 +26,8 @@ Contact · Privacy Policy (POPIA) · 404
 | Item | Where | Status |
 |---|---|---|
 | 3 client testimonials | Home page "What clients say" (marked **Demo content**) | Placeholder — need real reviews from client |
-| Facebook link | Footer + Contact page | Points to a Facebook search; need the real page URL |
-| Instagram / TikTok handles | Footer + Contact page | Taken from profile (@WorldbrandSigns, @worldbrands1) — client to confirm |
+| Facebook link | Removed for now | Need the real Facebook page URL from client, then re-add |
+| Instagram / TikTok | Footer + Contact page | Verified 11 Nov 2026: @worldbrandsigns and @worldbrands1 are the client's accounts |
 | Business hours | Not shown | Ask client if they want them listed |
 | Client logo images | Clients page uses neon text names, not logos | Optional: client to send logos + confirm permission |
 

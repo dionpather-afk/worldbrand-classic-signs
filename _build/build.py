@@ -27,7 +27,7 @@ BIZ = {
     'region': 'KwaZulu-Natal',
     'reg': '2021/117042/07',
     'est': '2019',
-    'facebook': 'https://www.facebook.com/search/top?q=Worldbrand%20Classic%20Signs',
+    'facebook': '',  # add the real Facebook page URL when the client supplies it
     'instagram': 'https://www.instagram.com/worldbrandsigns/',
     'tiktok': 'https://www.tiktok.com/@worldbrands1',
 }
@@ -208,7 +208,6 @@ def footer():
     <img src="assets/img/wcs-logo.png" alt="WCS logo" width="150" height="122" loading="lazy">
     <p>Custom signs designed, fabricated and installed in Durban since {BIZ['est']}. Your signs, our expertise — making a statement that stands out.</p>
     <div class="socials">
-     <a href="{BIZ['facebook']}" target="_blank" rel="noopener" aria-label="Facebook">{ICON['fb']}</a>
      <a href="{BIZ['instagram']}" target="_blank" rel="noopener" aria-label="Instagram">{ICON['ig']}</a>
      <a href="{BIZ['tiktok']}" target="_blank" rel="noopener" aria-label="TikTok">{ICON['tt']}</a>
     </div>
@@ -641,7 +640,6 @@ def page_contact():
    </ul>
    <h3 style="margin-top:2.5rem;color:#fff">Find us on social media</h3>
    <ul class="contact-list" style="margin-top:1rem">
-    <li><span class="ic">{ICON['fb']}</span><div><b>Facebook</b><a href="{BIZ['facebook']}" target="_blank" rel="noopener">@Worldbrand Classic Signs</a></div></li>
     <li><span class="ic">{ICON['ig']}</span><div><b>Instagram</b><a href="{BIZ['instagram']}" target="_blank" rel="noopener">@WorldbrandSigns</a></div></li>
     <li><span class="ic">{ICON['tt']}</span><div><b>TikTok</b><a href="{BIZ['tiktok']}" target="_blank" rel="noopener">@worldbrands1</a></div></li>
    </ul>

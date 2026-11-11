@@ -49,6 +49,6 @@ No server, database or secrets are needed.
 - Preview build is set to `noindex` so Google does not index the demo.
 
 ## Rollback plan
-Every change is a Git commit; each release is tagged (`v1.0-preview`, …).
-To roll back: `git revert <commit>` (or `git checkout <tag> -- .` then commit) and push — GitHub Pages redeploys in about a minute.
+Every change is a Git commit, and each release is saved as its own branch (`release/v1.0-preview`, …).
+To roll back: `git checkout release/v1.0-preview -- .` then commit and push to `main` (or `git revert <commit>`). GitHub Pages redeploys in about a minute.
 On Xneelo: keep the previous release zip; re-upload it to roll back.

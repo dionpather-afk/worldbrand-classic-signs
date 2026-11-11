@@ -338,3 +338,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--pink);bo
   .reveal{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+
+/* Bigger tap targets for contact links on touch screens */
+.contact-list a{display:inline-block;padding:.45rem 0;min-height:44px;line-height:1.6}
+.choice label.consent a{display:inline-block;padding:.3rem 0}
